@@ -16,7 +16,7 @@ The project employs a Random Forest Classifier from scikit-learn, trained on pre
 - **Implementation**: Training is performed offline using scikit-learn, with no explicit use of deep learning frameworks like TensorFlow or PyTorch.
 
 #### Data Analysis
-- **Input Handling**: Uploaded or entered text is cleaned and preprocessed using a custom `preprocess_text` function, likely involving tokenization, stop word removal, and lemmatization.
+- **Input Handling**: Uploaded or entered text is cleaned and preprocessed using a custom preprocess_text function, likely involving tokenization, stop word removal, and lemmatization.
 - **Sentiment Prediction**: The pre-trained Random Forest Classifier processes the TF-IDF vectorized text, assigning a sentiment score based on learned patterns. Scores are mapped to categories (e.g., 2 = Positive, 1 = Neutral, 0 = Negative).
-- **Suggestion Generation**: A custom `generate_suggestion` function (from the `generative` module) creates suggestions based on the sentiment score, possibly using rule-based logic or simple NLP techniques.
+- **Suggestion Generation**: A custom generate_suggestion function (from the generative module) creates suggestions based on the sentiment score, possibly using rule-based logic or simple NLP techniques.
 - **Output**: The results are formatted into a table and rendered on the webpage via Flask and Jinja2 templating.
