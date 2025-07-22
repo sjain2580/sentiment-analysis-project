@@ -2,8 +2,8 @@ from flask import Flask, request, jsonify, render_template
 import joblib
 from data_preprocessing import preprocess_text
 from generative import generate_suggestion
-from math import ceil
 import pandas as pd
+import os
 
 app = Flask(__name__, static_folder='static')
 app.config['MAX_CONTENT_LENGTH'] = 50 * 1024 * 1024  # 50MB limit for file uploads
@@ -95,5 +95,5 @@ def analyze_review():
       return jsonify(results)
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000, debug=True)
+    app.run(host='0.0.0.0', port=int(os.environ.get('PORT', 5000)), debug=True)
     
