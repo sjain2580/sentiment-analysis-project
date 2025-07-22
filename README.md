@@ -11,7 +11,7 @@ This project is a web-based sentiment analysis tool designed to evaluate the sen
 The project employs a Random Forest Classifier from scikit-learn, trained on preprocessed text data. The model leverages TF-IDF vectorization to convert text into numerical features, enabling sentiment classification. The specific model is fine-tuned and saved using joblib for deployment in the Flask app.
 
 #### Data Training
-- **Dataset**: The model is trained on a dataset of Amazon Product Reviews, readily available on Kaggle.
+- **Dataset**: The model is trained on a dataset of Amazon Product Reviews, readily available on Kaggle.(https://www.kaggle.com/datasets/bittlingmayer/amazonreviews)
   
 - **Training Process**: The data undergoes preprocessing with NLTK, including tokenization, stop word removal, and lemmatization (via WordNetLemmatizer). The preprocessed text is converted to TF-IDF features, and the dataset is split for training and validation using train_test_split. The Random Forest Classifier is trained with techniques like resampling (via scikit-learn’s resample) and optimized using accuracy_score and classification_report metrics. The trained model is saved with joblib.
 
