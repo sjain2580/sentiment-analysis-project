@@ -10,6 +10,11 @@ This project is a web-based sentiment analysis tool designed to evaluate the sen
 
 - **Output**: Results include the original review, a sentiment score (e.g., 2 for positive, 1 for neutral, 0 for negative), and a suggestion, presented in a table.
 
+## Technologies Used
+- Python (Flask, scikit-learn, NLTK)
+- HTML/CSS
+- VS Code Dev Tunnels
+  
 ## Model Used
 The project employs a Random Forest Classifier from scikit-learn, trained on preprocessed text data. The model leverages TF-IDF vectorization to convert text into numerical features, enabling sentiment classification. The specific model is fine-tuned and saved using joblib for deployment in the Flask app.
 
@@ -29,17 +34,24 @@ The project employs a Random Forest Classifier from scikit-learn, trained on pre
   
 - **Output**: The results are formatted into a table and rendered on the webpage via Flask.
 
+## Getting Started
+1. **Clone the repository:**
+    ```bash
+    git clone https://github.com/sjain2580/IBM-Single-Page-Portfolio-Website.git
+    ```
+    (Replace `YourGitHubUsername` and `your-repo-name` with your actual details)
+2. Run locally: `python app.py`
+
 ## Live Deployment
 Check the live app here - https://25866n7q-5000.inc1.devtunnels.ms/
 
-## Technologies
-- Python (Flask, scikit-learn, NLTK)
-- HTML/CSS
-- VS Code Dev Tunnels
-
-## Getting Started
-1. Clone the repo: `git clone https://github.com/sjain2580/sentiment-analysis-project.git`
-2. Run locally: `python app.py`
-
 ## Contributors
-- [Your Name](https://github.com/sjain2580)
+**https://github.com/sjain2580**
+
+## Connect with Me
+Feel free to reach out if you have any questions or just want to connect!
+**[![LinkedIn](https://img.shields.io/badge/-LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/sjain04/)**
+**[![GitHub](https://img.shields.io/badge/-GitHub-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/sjain2580)**
+**[![Email](https://img.shields.io/badge/-Email-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:sjain040395@gmail.com)**
+
+---
