@@ -14,8 +14,7 @@ This repository showcases a web-based sentiment analysis tool designed to evalua
 * Python (Flask, scikit-learn, NLTK)
 
 * HTML/CSS
-
-  
+ 
 ## Model Used
 The project employs a Random Forest Classifier from scikit-learn, trained on preprocessed text data. The model leverages TF-IDF vectorization to convert text into numerical features, enabling sentiment classification. The specific model is fine-tuned and saved using joblib for deployment in the Flask app.
 
@@ -36,6 +35,7 @@ The project employs a Random Forest Classifier from scikit-learn, trained on pre
 * **Output**: The results are formatted into a table and rendered on the webpage via Flask.
 
 ## How to Run the Project
+To view this project locally on your machine:
 1. **Clone the repository:**
     ```bash
     git clone https://github.com/sjain2580/IBM-Single-Page-Portfolio-Website.git
