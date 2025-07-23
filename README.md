@@ -38,7 +38,7 @@ The project employs a Random Forest Classifier from scikit-learn, trained on pre
 To view this project locally on your machine:
 1. **Clone the repository:**
     ```bash
-    git clone https://github.com/sjain2580/IBM-Single-Page-Portfolio-Website.git
+    git clone https://github.com/sjain2580/sentiment-analysis-project.git
     ```
     (Replace `YourGitHubUsername` and `your-repo-name` with your actual details)
 
