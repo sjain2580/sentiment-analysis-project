@@ -6,7 +6,9 @@ This project is a web-based sentiment analysis tool designed to evaluate the sen
 
 #### How It Works
 - **User Interface**: The webpage, built with HTML and styled with CSS, features a form for entering reviews or uploading files. Upon submission, the data is sent to a Flask backend for processing.
+  
 - **Backend Processing**: The Flask server receives the input, preprocesses the text, applies a trained Random Forest Classifier model to predict sentiment, generates suggestions using a custom function, and returns the results to update the table dynamically.
+
 - **Output**: Results include the original review, a sentiment score (e.g., 2 for positive, 1 for neutral, 0 for negative), and a suggestion, presented in a table.
 
 #### Model Used
