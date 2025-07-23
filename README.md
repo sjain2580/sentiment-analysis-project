@@ -30,4 +30,17 @@ The project employs a Random Forest Classifier from scikit-learn, trained on pre
   
 - **Output**: The results are formatted into a table and rendered on the webpage via Flask.
 
+## Live Deployment
+[Check the live app here](https://25866n7q-5000.inc1.devtunnels.ms/)
 
+## Technologies
+- Python (Flask, scikit-learn, NLTK)
+- HTML/CSS
+- VS Code Dev Tunnels
+
+## Getting Started
+1. Clone the repo: `git clone https://github.com/sjain2580/sentiment-analysis-project.git`
+2. Run locally: `python app.py`
+
+## Contributors
+- [Your Name](https://github.com/sjain2580)
