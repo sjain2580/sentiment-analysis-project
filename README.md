@@ -35,7 +35,7 @@ The project employs a Random Forest Classifier from scikit-learn, trained on pre
   
 * **Output**: The results are formatted into a table and rendered on the webpage via Flask.
 
-## Getting Started
+## How to run the project
 1. **Clone the repository:**
     ```bash
     git clone https://github.com/sjain2580/IBM-Single-Page-Portfolio-Website.git
