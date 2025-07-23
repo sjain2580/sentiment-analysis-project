@@ -31,7 +31,7 @@ The project employs a Random Forest Classifier from scikit-learn, trained on pre
 - **Output**: The results are formatted into a table and rendered on the webpage via Flask.
 
 ## Live Deployment
-[Check the live app here](https://25866n7q-5000.inc1.devtunnels.ms/)
+Check the live app here - https://25866n7q-5000.inc1.devtunnels.ms/
 
 ## Technologies
 - Python (Flask, scikit-learn, NLTK)
