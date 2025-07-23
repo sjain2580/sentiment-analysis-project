@@ -1,3 +1,5 @@
+![Sentiment Analysis Flow](./assets/sentiment_analysis_diagram.png)
+
 #### Sentiment analysis
 
 This project is a web-based sentiment analysis tool designed to evaluate the sentiment of text reviews (e.g., positive, neutral, negative) and provide tailored suggestions. Users can input reviews manually or upload a CSV/TXT file, and the tool processes the data to display results in a table, including the review, and a suggestion.
@@ -25,3 +27,5 @@ The project employs a Random Forest Classifier from scikit-learn, trained on pre
 - **Suggestion Generation**: A custom generate_suggestion function creates suggestions based on the sentiment score, possibly using rule-based logic or simple NLP techniques.
   
 - **Output**: The results are formatted into a table and rendered on the webpage via Flask.
+
+
