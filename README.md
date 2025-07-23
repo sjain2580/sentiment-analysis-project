@@ -2,6 +2,7 @@
 
 #### Sentiment analysis
 
+## Overview
 This project is a web-based sentiment analysis tool designed to evaluate the sentiment of text reviews (e.g., positive, neutral, negative) and provide tailored suggestions. Users can input reviews manually or upload a CSV/TXT file, and the tool processes the data to display results in a table, including the review, and a suggestion.
 
 ## How It Works
