@@ -1,4 +1,4 @@
-# Create a simple rule-based generator to suggest improvements based on sentiment
+# function for simple rule-based generator to suggest improvements based on sentiment
 def generate_suggestion(sentiment):
     if sentiment == 0:
         return "Consider improving product quality or customer service based on this feedback."

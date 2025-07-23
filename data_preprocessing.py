@@ -12,7 +12,7 @@ from generative import generate_suggestion
 from sklearn.utils import resample
 
 def preprocess_text(text):
-    # Handle NaN or non-string values
+    # Handle non-string values
     if not isinstance(text, str) or pd.isna(text):
         return ""
     # Convert to lowercase
