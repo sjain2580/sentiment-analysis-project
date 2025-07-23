@@ -6,7 +6,7 @@ import pandas as pd
 import os
 
 app = Flask(__name__, static_folder='static')
-app.config['MAX_CONTENT_LENGTH'] = 50 * 1024 * 1024  # 50MB limit for file uploads
+app.config['MAX_CONTENT_LENGTH'] = 50 * 1024 * 1024 
 
 # Load pre-trained model and vectorizer
 model = joblib.load('sentiment_model_new.pkl')
