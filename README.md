@@ -42,7 +42,12 @@ To view this project locally on your machine:
     ```
     (Replace `YourGitHubUsername` and `your-repo-name` with your actual details)
 
-2. Run locally: `python app.py`
+2. **Navigate to the project directory:**
+    ```bash
+    cd sentiment-analysis-project
+    ```
+
+3. Run locally: `python app.py`
 
 ## Live Deployment
 Check the live app here - https://25866n7q-5000.inc1.devtunnels.ms/
