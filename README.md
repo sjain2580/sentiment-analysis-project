@@ -15,7 +15,6 @@ This repository showcases a web-based sentiment analysis tool designed to evalua
 
 * HTML/CSS
 
-* VS Code Dev Tunnels
   
 ## Model Used
 The project employs a Random Forest Classifier from scikit-learn, trained on preprocessed text data. The model leverages TF-IDF vectorization to convert text into numerical features, enabling sentiment classification. The specific model is fine-tuned and saved using joblib for deployment in the Flask app.
