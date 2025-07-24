@@ -30,6 +30,8 @@ def process_reviews_in_chunks(reviews, chunk_size=1000):
 @app.route('/', methods=['GET', 'POST'])
 def home():
     if request.method == 'POST':
+        print("Received form data:", dict(request.form))
+        print("Received files:", request.files)
         reviews = request.form.get('review', '').strip()
         file = request.files.get('file')
         
