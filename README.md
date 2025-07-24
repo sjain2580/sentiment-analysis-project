@@ -50,8 +50,7 @@ To view this project locally on your machine:
 3. Run locally: `python app.py`
 
 ## Live Deployment
-Check the live app here - https://25866n7q-5000.inc1.devtunnels.ms/
-
+Check the live app here - https://senti-ment-analysis-21e3be74f54b.herokuapp.com/
 ## Contributors
 **https://github.com/sjain2580**
 
