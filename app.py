@@ -2,6 +2,8 @@ from flask import Flask, request, jsonify, render_template
 import joblib
 import os
 import pandas as pd
+from data_preprocessing import preprocess_text
+
 
 # Initialize Flask app
 app = Flask(__name__, static_folder='static')
@@ -39,7 +41,7 @@ def home():
             print(f"File uploaded: {file.filename}, size: {file.content_length} bytes")
             try:
                 if file.filename.endswith('.csv'):
-                    df = pd.read_csv(file, encoding='ISO-8859-1')
+                    df = pd.read_csv(file, encoding='ISO-8859-1', nrows=10000)
                     print(f"CSV columns: {df.columns.tolist()}")
                     if 'Review' not in df.columns:
                         return render_template('index.html', error="No 'Review' column found. Available columns: " + str(df.columns.tolist()), result=None)
