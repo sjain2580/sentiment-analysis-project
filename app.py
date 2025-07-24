@@ -4,6 +4,14 @@ from data_preprocessing import preprocess_text
 from generative import generate_suggestion
 import pandas as pd
 import os
+import nltk
+
+# Set NLTK data path to the local directory in the project
+nltk_data_path = os.path.join(os.path.dirname(__file__), 'nltk_data')
+if not os.path.exists(nltk_data_path):
+    raise FileNotFoundError(f"NLTK data not found at {nltk_data_path}. Please ensure nltk_data folder is in the project root.")
+nltk.data.path = [nltk_data_path] + nltk.data.path
+
 
 app = Flask(__name__, static_folder='static')
 app.config['MAX_CONTENT_LENGTH'] = 50 * 1024 * 1024 
