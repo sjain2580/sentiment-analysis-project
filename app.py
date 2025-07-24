@@ -30,9 +30,9 @@ def process_reviews_in_chunks(reviews, chunk_size=1000):
 @app.route('/', methods=['GET', 'POST'])
 def home():
     if request.method == 'POST':
-        print("Received form data:", dict(request.form))
-        print("Received files:", request.files)
-        reviews = request.form.get('review', '').strip()
+        print("Received form data:", dict(request.form))  # Debug print
+        print("Received files:", request.files)  # Debug print
+        reviews = request.form.get('reviews', '').strip()  # Changed from 'review' to 'reviews'
         file = request.files.get('file')
         
         if file and file.filename:
@@ -71,8 +71,8 @@ def home():
         print(f"Processing reviews: {len([r for r in reviews.split(',') if r.strip()])} reviews")
         sentiments = []
         try:
-            load_models()  # Load models on demand
-            from generative import generate_suggestion  # Lazy import
+            load_models()
+            from generative import generate_suggestion
             for chunk_predictions in process_reviews_in_chunks(reviews):
                 sentiments.extend(model.predict(chunk_predictions))
             suggestions = [generate_suggestion(sent) for sent in sentiments]
@@ -85,6 +85,7 @@ def home():
         return render_template('index.html', error=None, result=results)
     
     return render_template('index.html', error=None, result=None)
+
 
 @app.route('/analyze', methods=['POST'])
 def analyze_review():
