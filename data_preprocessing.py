@@ -25,9 +25,9 @@ def preprocess_text(text):
       
           
 # Download necessary NLTK resources
-nltk.download('punkt')
-nltk.download('stopwords')
-nltk.download('wordnet')
+# nltk.download('punkt')
+# nltk.download('stopwords')
+# nltk.download('wordnet')
 
 # Initialize stopwords and lemmatizer
 stop_words = set(stopwords.words('english'))
